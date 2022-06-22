@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/facerecognition/static/css/main.7b857358.css",
+    "main.js": "/facerecognition/static/js/main.696d266f.js",
+    "static/js/787.48d3629e.chunk.js": "/facerecognition/static/js/787.48d3629e.chunk.js",
+    "static/media/background.jpg": "/facerecognition/static/media/background.5fe578b61471b8a3f5f8.jpg",
+    "static/media/Montserrat-Regular.ttf": "/facerecognition/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
+    "static/media/OpenSans-Italic.ttf": "/facerecognition/static/media/OpenSans-Italic.79c81eb67c8c53b33a29.ttf",
+    "static/media/OpenSans-Medium.ttf": "/facerecognition/static/media/OpenSans-Medium.f0cdede053a22b990af8.ttf",
+    "static/media/OpenSans-Regular.ttf": "/facerecognition/static/media/OpenSans-Regular.d7d7b8359eeb9cddfba6.ttf",
+    "static/media/OpenSans-Bold.ttf": "/facerecognition/static/media/OpenSans-Bold.6e27168fc8a5a200a026.ttf",
+    "static/media/Agustina.woff": "/facerecognition/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "index.html": "/facerecognition/index.html",
+    "main.7b857358.css.map": "/facerecognition/static/css/main.7b857358.css.map",
+    "main.696d266f.js.map": "/facerecognition/static/js/main.696d266f.js.map",
+    "787.48d3629e.chunk.js.map": "/facerecognition/static/js/787.48d3629e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b857358.css",
+    "static/js/main.696d266f.js"
+  ]
+}
