@@ -1,0 +1,37 @@
+[default]
+DEBUG = false
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://username:password@localhost/db_name'
+SECRET_KEY = "SECRET_KEY"
+JWT_ALGORITHM = "HS256"
+EXTENSIONS = [
+    "src.database:init_app",
+    "src.utils.commands:init_app",
+]
+
+[development]
+EXTENSIONS = [
+    "flask_debugtoolbar:DebugToolbarExtension",
+    "dynaconf_merge_unique"  # to reuse extensions list from [default]
+]
+DEBUG = true
+DEBUG_TOOLBAR_ENABLED = true
+DEBUG_TB_INTERCEPT_REDIRECTS = false
+DEBUG_TB_PROFILER_ENABLED = true
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
+DEBUG_TB_PANELS = [
+    "flask_debugtoolbar.panels.versions.VersionDebugPanel",
+    "flask_debugtoolbar.panels.sqlalchemy.SQLAlchemyDebugPanel",
+    "flask_debugtoolbar.panels.timer.TimerDebugPanel",
+    "flask_debugtoolbar.panels.headers.HeaderDebugPanel",
+    "flask_debugtoolbar.panels.request_vars.RequestVarsDebugPanel",
+    "flask_debugtoolbar.panels.route_list.RouteListDebugPanel",
+    "flask_debugtoolbar.panels.logger.LoggingPanel",
+    "flask_debugtoolbar.panels.profiler.ProfilerDebugPanel",
+    "flask_debugtoolbar.panels.config_vars.ConfigVarsDebugPanel"
+]
+
+[testing]
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://username:password@localhost/db_name'
+
+[production]
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://username:password@localhost/db_name'
