@@ -205,7 +205,23 @@ def face_login_user():
     status = lc(username, image)
 
     if status == "success":
-        return jsonify({"id": user.id, "username": user.username, "name": user.name})
+        token = jwt.encode(
+            {
+                "username": username,
+                "expiration": str(datetime.utcnow() + timedelta(seconds=120)),
+                "algorithm": app.config["JWT_ALGORITHM"],
+            },
+            app.config["SECRET_KEY"],
+        )
+
+        return jsonify(
+            {
+                "id": user.id,
+                "username": user.username,
+                "name": user.name,
+                "token": token,
+            }
+        )
 
     else:
         return (
